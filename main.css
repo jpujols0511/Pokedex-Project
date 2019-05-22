@@ -1,4 +1,58 @@
+body{  
+    /* background-image: url('https://images2.alphacoders.com/754/thumb-1920-75420.jpg'); */
+    /* background-position: 51% 11%; */
+}
+
 .main-header{
     text-align: center;
     padding-top: 10px;
+    color: #000;
+}
+
+.pokedex{
+    width: 20%;
+}
+
+.grid{
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    /* margin: 5px; */
+}
+
+#pokeNum1{
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#pokeNum2{
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#pokeNum3{
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.container{
+    margin: 10px;
+}
+
+.container-1{
+    background: red;
+    height: 500px;
+}
+
+.container-2{
+    background: purple;
+    height: 500px;
+}
+
+.container-3{
+    background: green;
+    height: 500px;
 }
