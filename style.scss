@@ -1,0 +1,158 @@
+%pokemon-name{
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+%container-size{
+    height: 500px;
+}
+
+%stat-size{
+    height: 269px;
+    width: 450px;
+    margin: 17px 0 0 191px;
+}
+
+%poke-stats{
+    h3{
+        padding: 5px;
+    }
+
+    p{
+        font-size: 20px;
+        padding: 4px;
+    }
+}
+
+.poke-stats-1{
+    @extend %poke-stats;
+}
+
+.poke-stats-2{
+    @extend %poke-stats;
+}
+
+
+.poke-stats-3{
+    @extend %poke-stats;
+}
+
+
+.main-header{
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+}
+
+.pokedex{
+    width: 30%;
+    position: absolute;
+    left: 739px;
+    top: -8px;
+}
+
+.grid{
+    width: 1138px;
+    height: 392px;
+    background: #fff;
+    /* margin: 5px; */
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 46px;
+    border-radius: 30px;
+}
+
+#pokeNum1{
+    @extend %pokemon-name;
+    
+}
+
+#pokeNum2{
+    @extend %pokemon-name;
+    
+}
+
+#pokeNum3{
+    @extend %pokemon-name;
+}
+
+.container{
+    margin: 10px;
+}
+
+.container-1{
+    @extend %container-size;
+    background: red;
+}
+
+.container-2{
+    @extend %container-size;
+    background: purple;
+}
+
+.container-3{
+    @extend %container-size;
+    background: green;
+}
+
+.header{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.firstimg{
+    width: 11%;
+    position: absolute;
+    left: 883px;
+    top: 32px;
+    z-index: 1;
+}
+
+.pokedex-2{
+    width: 30%;
+    position: absolute;
+    left: 739px;
+    top: -8px;
+}
+
+.pokedex-3{
+    width: 30%;
+    position: absolute;
+    left: 739px;
+    top: -8px;
+}
+
+.secondimg{
+    width: 10%;
+    position: absolute;
+    left: 896px;
+    top: 39px;
+    z-index: 1;
+}
+
+.thirdimg{
+    width: 8%;
+    position: absolute;
+    left: 896px;
+    top: 52px;
+    z-index: 1;
+}
+
+
+.stat-container{
+    @extend %stat-size;
+    background: yellow;
+}
+
+.stat-container-2{
+    @extend %stat-size;
+    background: gray;
+        
+}
+
+.stat-container-3{
+    @extend %stat-size;
+    background: cyan;
+}
