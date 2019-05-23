@@ -5,36 +5,8 @@ pokemonIds = [74, 150, 356]
 for(i = 0; i < pokemonIds.length; i++){
     loadDoc(pokemonIds[i])
 }
-
-function loadDoc(i) {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            pokeData = JSON.parse(this.responseText)
-            
-            
-            poke = new Pokemon(
-                pokeData.name,
-                pokeData.id,
-                pokeData.stats[5].base_stat,
-                pokeData.stats[4].base_stat,
-                pokeData.stats[3].base_stat,
-                pokeData.abilities[1].ability.name
-                
-                )
-                THREE_POKE.push(poke)
-                
-                
-                
-            }
-        }
-        xhttp.open("GET", `https://pokeapi.co/api/v2/pokemon/${i}`, true);
-        xhttp.send();
-    };
-    
-    
 class Pokemon {
-
+    
     constructor(name, id, hp, attack, defense, abilities){
         this.name = name
         this.id = id
@@ -46,13 +18,52 @@ class Pokemon {
     }
 }
 
+class Trainer{
+    constructor(name){
+        this.name = name
+        this.pokemons = []
+    }
+    all(){
+        this.pokemons.push(pokemonObjects)
+    }
+    
+    get(){
+        
+    }
+                
+                }
+    new_trainer = new Trainer("Syx3k");
+
+
+function loadDoc(i) {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            pokeData = JSON.parse(this.responseText)
+            
+            
+            pokemonObjects = new Pokemon(
+                pokeData.name,
+                pokeData.id,
+                pokeData.stats[5].base_stat,
+                pokeData.stats[4].base_stat,
+                pokeData.stats[3].base_stat,
+                pokeData.abilities[1].ability.name
+                
+                )
+                THREE_POKE.push(pokemonObjects)
+                new_trainer.pokemons.push(pokemonObjects)
+            }
+        }
+        xhttp.open("GET", `https://pokeapi.co/api/v2/pokemon/${i}`, true);
+        xhttp.send();
+    };
 
 function displayInfo() {
 
     pokeGrid = document.getElementById('pokeGrid')
     secondPokemon = document.getElementById('pokeNum2')
     thirdPokemon = document.getElementById('pokeNum3')
-    
     
     
     pokeName = document.getElementById('pokeNum1')
@@ -95,6 +106,7 @@ function displayInfo() {
     poke3Attack.innerText = THREE_POKE[2]["attack"]
     poke3Defense.innerText = THREE_POKE[2]["defense"]
     poke3Ability.innerText = THREE_POKE[2]["abilities"]
+
 }
 
 
