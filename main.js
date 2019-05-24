@@ -60,7 +60,6 @@ function loadDoc(i) {
     };
 
 function displayInfo() {
-
     pokeGrid = document.getElementById('pokeGrid')
     secondPokemon = document.getElementById('pokeNum2')
     thirdPokemon = document.getElementById('pokeNum3')

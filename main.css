@@ -1,17 +1,32 @@
 #pokeNum3, #pokeNum2, #pokeNum1 {
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
+  display: inline;
+  position: relative;
+  left: 162px;
+  top: 28px;
+  color: white;
 }
 
-.container-3, .container-2, .container-1 {
-  height: 500px;
+.pokedex-3, .pokedex-2, .pokedex {
+  width: 33%;
+  position: absolute;
+  left: 474px;
+  top: 47px;
 }
 
 .stat-container-3, .stat-container-2, .stat-container {
   height: 269px;
   width: 450px;
-  margin: 17px 0 0 191px;
+  margin: 31px 0 0 17px;
+  border: 2px solid #000;
+  border-radius: 15px;
+  background: whitesmoke;
+}
+
+.container-3, .container-2, .container-1 {
+  height: 700px;
 }
 
 .poke-stats-3 h3, .poke-stats-2 h3, .poke-stats-1 h3 {
@@ -20,47 +35,59 @@
 .poke-stats-3 p, .poke-stats-2 p, .poke-stats-1 p {
   font-size: 20px;
   padding: 4px;
+  font-weight: 500;
+}
+
+.thirdimg, .secondimg, .firstimg {
+  position: absolute;
+  z-index: 1;
+}
+
+.main-nav {
+  height: 81px;
+  background: red;
 }
 
 .main-header {
+  height: 110px;
+  width: 370px;
+  border: 1px solid black;
+  background: white;
+  position: absolute;
+  right: 549px;
+  top: 0px;
+}
+.main-header h1 {
   text-align: center;
   padding-top: 10px;
   color: #000;
 }
 
-.pokedex {
-  width: 30%;
-  position: absolute;
-  left: 739px;
-  top: -8px;
-}
-
 .grid {
-  width: 1138px;
+  width: 739px;
   height: 392px;
-  background: #fff;
-  /* margin: 5px; */
+  background: #fff0;
   display: block;
-  margin: 0 auto;
   position: relative;
   top: 46px;
   border-radius: 30px;
 }
 
-.container {
-  margin: 10px;
-}
-
 .container-1 {
-  background: red;
+  background-image: url("geodude.png");
+  background-position: 1496px 539px;
 }
 
 .container-2 {
-  background: purple;
+  background-image: url("dus.jpg");
+  background-position: 96px 735px;
+  background-size: cover;
 }
 
 .container-3 {
-  background: green;
+  background-image: url("mewtwo.jpg");
+  background-position: 1506px -94px;
+  background-size: cover;
 }
 
 .header {
@@ -69,53 +96,41 @@
 }
 
 .firstimg {
-  width: 11%;
-  position: absolute;
-  left: 883px;
-  top: 32px;
-  z-index: 1;
-}
-
-.pokedex-2 {
-  width: 30%;
-  position: absolute;
-  left: 739px;
-  top: -8px;
-}
-
-.pokedex-3 {
-  width: 30%;
-  position: absolute;
-  left: 739px;
-  top: -8px;
+  width: 12%;
+  left: 578px;
+  top: 82px;
 }
 
 .secondimg {
-  width: 10%;
-  position: absolute;
-  left: 896px;
-  top: 39px;
-  z-index: 1;
+  width: 12%;
+  left: 582px;
+  top: 82px;
 }
 
 .thirdimg {
-  width: 8%;
-  position: absolute;
-  left: 896px;
-  top: 52px;
-  z-index: 1;
+  width: 10%;
+  left: 581px;
+  top: 87px;
 }
 
-.stat-container {
-  background: yellow;
+.poke-id {
+  color: #9DB7F5;
 }
 
-.stat-container-2 {
-  background: gray;
+.poke-hp {
+  color: #FF5959;
 }
 
-.stat-container-3 {
-  background: cyan;
+.poke-atk {
+  color: #F5AC78;
+}
+
+.poke-def {
+  color: #FAE078;
+}
+
+.poke-abi {
+  color: #A7DB8D;
 }
 
 /*# sourceMappingURL=main.css.map */

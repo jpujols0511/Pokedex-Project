@@ -1,28 +1,50 @@
 %pokemon-name{
     font-family: sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
+    display: inline;
+    position: relative;
+    left: 162px;
+    top: 28px;
+    color: white;
 }
 
-%container-size{
-    height: 500px;
+%pokedex-pos{
+    width: 33%;
+    position: absolute;
+    left: 474px;
+    top: 47px;
 }
 
 %stat-size{
     height: 269px;
     width: 450px;
-    margin: 17px 0 0 191px;
+    margin: 31px 0 0 17px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    background: whitesmoke;
+}
+
+%container-size{
+    height: 700px;
 }
 
 %poke-stats{
     h3{
         padding: 5px;
+        
     }
 
     p{
         font-size: 20px;
         padding: 4px;
+        font-weight: 500;
     }
+}
+
+%img-attributes{
+    position: absolute;
+    z-index: 1;
 }
 
 .poke-stats-1{
@@ -38,31 +60,38 @@
     @extend %poke-stats;
 }
 
-
-.main-header{
-    text-align: center;
-    padding-top: 10px;
-    color: #000;
+.main-nav{
+    height: 81px;
+    background: red;
 }
+    .main-header{
+        h1{
 
-.pokedex{
-    width: 30%;
+            text-align: center;
+            padding-top: 10px;
+            color: #000;
+        }
+    height: 110px;
+    width: 370px;
+    border: 1px solid black;
+    background: white;
     position: absolute;
-    left: 739px;
-    top: -8px;
-}
+    right: 549px;
+    top: 0px;
+    }
+
+
 
 .grid{
-    width: 1138px;
+    width: 739px;
     height: 392px;
-    background: #fff;
-    /* margin: 5px; */
+    background: #fff0;
     display: block;
-    margin: 0 auto;
     position: relative;
     top: 46px;
     border-radius: 30px;
 }
+
 
 #pokeNum1{
     @extend %pokemon-name;
@@ -78,23 +107,24 @@
     @extend %pokemon-name;
 }
 
-.container{
-    margin: 10px;
-}
-
 .container-1{
     @extend %container-size;
-    background: red;
+    background-image: url('geodude.png');
+    background-position: 1496px 539px;
 }
 
 .container-2{
     @extend %container-size;
-    background: purple;
+    background-image: url('dus.jpg');
+    background-position: 96px 735px;
+    background-size: cover;
 }
 
 .container-3{
     @extend %container-size;
-    background: green;
+    background-image: url('mewtwo.jpg');
+    background-position: 1506px -94px;
+    background-size: cover;
 }
 
 .header{
@@ -102,57 +132,69 @@
     font-weight: 600;
 }
 
-.firstimg{
-    width: 11%;
-    position: absolute;
-    left: 883px;
-    top: 32px;
-    z-index: 1;
+.pokedex{
+    @extend %pokedex-pos;
 }
 
 .pokedex-2{
-    width: 30%;
-    position: absolute;
-    left: 739px;
-    top: -8px;
+    @extend %pokedex-pos;
 }
 
 .pokedex-3{
-    width: 30%;
-    position: absolute;
-    left: 739px;
-    top: -8px;
+    @extend %pokedex-pos;
+}
+
+.firstimg{
+    width: 12%;
+    left: 578px;
+    top: 82px;
+    @extend %img-attributes;
 }
 
 .secondimg{
-    width: 10%;
-    position: absolute;
-    left: 896px;
-    top: 39px;
-    z-index: 1;
+    width: 12%;
+    left: 582px;
+    top: 82px;
+    @extend %img-attributes;
 }
 
 .thirdimg{
-    width: 8%;
-    position: absolute;
-    left: 896px;
-    top: 52px;
-    z-index: 1;
+    width: 10%;
+    left: 581px;
+    top: 87px;
+    @extend %img-attributes;
 }
 
 
 .stat-container{
     @extend %stat-size;
-    background: yellow;
 }
 
 .stat-container-2{
     @extend %stat-size;
-    background: gray;
         
 }
 
 .stat-container-3{
     @extend %stat-size;
-    background: cyan;
 }
+
+.poke-id{
+    color: #9DB7F5;
+}
+
+.poke-hp{
+    color: #FF5959;
+}
+
+.poke-atk{
+    color: #F5AC78;
+}
+
+.poke-def{
+    color: #FAE078;
+}
+
+.poke-abi{
+    color: #A7DB8D;
+}       
