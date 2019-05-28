@@ -80,7 +80,6 @@ function displayInfo() {
     poke1Defense.innerText = THREE_POKE[0]["defense"]
     poke1Ability.innerText = THREE_POKE[0]["abilities"]
     
-    
     poke2ID = document.getElementById('poke2Id')
     poke2HP = document.getElementById('poke2Hp')
     poke2Attack = document.getElementById('poke2Attack')
@@ -106,6 +105,9 @@ function displayInfo() {
     poke3Attack.innerText = THREE_POKE[2]["attack"]
     poke3Defense.innerText = THREE_POKE[2]["defense"]
     poke3Ability.innerText = THREE_POKE[2]["abilities"]
+
+    trainerName = document.getElementById('trainer-name')
+    trainerName.innerText = new_trainer["name"]
 
 }
 
