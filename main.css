@@ -205,11 +205,6 @@
   background-color: #E3350D;
 }
 
-#fullpage {
-  height: 100vh;
-  overflow: hidden;
-}
-
 .poke-info {
   width: 750px;
   height: 280px;
@@ -227,6 +222,13 @@
   text-align: left;
   margin: 2%;
   line-height: 1.8;
+}
+
+.pokeball {
+  width: 6%;
+  position: absolute;
+  top: 236px;
+  right: 97px;
 }
 
 /*# sourceMappingURL=main.css.map */
