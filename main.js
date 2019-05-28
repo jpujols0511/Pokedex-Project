@@ -5,6 +5,7 @@ pokemonIds = [74, 150, 356]
 for(i = 0; i < pokemonIds.length; i++){
     loadDoc(pokemonIds[i])
 }
+
 class Pokemon {
     
     constructor(name, id, hp, attack, defense, abilities){
@@ -56,7 +57,7 @@ function loadDoc(i) {
             }
         }
         xhttp.open("GET", `https://pokeapi.co/api/v2/pokemon/${i}`, true);
-        xhttp.send();
+          xhttp.send();
     };
 
 function displayInfo() {

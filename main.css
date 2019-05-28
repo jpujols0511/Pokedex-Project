@@ -25,7 +25,7 @@
   background: whitesmoke;
 }
 
-.container-3, .container-2, .container-1 {
+.container-3, .container-2, .container-1, .container-0 {
   height: 700px;
 }
 
@@ -47,6 +47,10 @@
   height: 81px;
   background: red;
 }
+.main-nav li {
+  display: inline-block;
+  font-size: 20px;
+}
 
 .main-header {
   height: 110px;
@@ -63,6 +67,10 @@
   color: #000;
 }
 
+.left-nav {
+  float: right;
+}
+
 .grid {
   width: 739px;
   height: 392px;
@@ -71,6 +79,54 @@
   position: relative;
   top: 46px;
   border-radius: 30px;
+}
+
+.container-0 {
+  background: #000;
+}
+.container-0 section {
+  text-align: left;
+  padding-top: 80px;
+  padding-left: 150px;
+}
+.container-0 section img {
+  width: 20%;
+  position: absolute;
+}
+.container-0 section h1 {
+  color: white;
+  text-align: center;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+.container-0 .trainer-info {
+  height: 437px;
+  width: 471px;
+  background: white;
+  display: inline-block;
+  position: relative;
+  top: -13px;
+  left: 445px;
+  border-radius: 15px;
+}
+.container-0 .trainer-info div {
+  display: inline-block;
+  width: 230px;
+}
+.container-0 .trainer-info div h3 {
+  font-size: 21px;
+  padding: 18px 0 18px 0;
+}
+.container-0 .trainer-info div p {
+  padding: 21px 0 18px 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+#pokemons {
+  text-align: center;
+  color: white;
+  padding-top: 66px;
 }
 
 .container-1 {

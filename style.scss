@@ -63,6 +63,10 @@
 .main-nav{
     height: 81px;
     background: red;
+            li{
+                display: inline-block;
+                font-size: 20px;
+            }
 }
     .main-header{
         h1{
@@ -80,6 +84,9 @@
     top: 0px;
     }
 
+    .left-nav{
+        float: right;
+    }
 
 
 .grid{
@@ -105,6 +112,57 @@
 
 #pokeNum3{
     @extend %pokemon-name;
+}
+
+.container-0{
+    @extend %container-size;
+    background: #000;
+    section{
+        text-align: left;
+        padding-top: 80px;
+        padding-left: 150px;
+        img{
+            width: 20%;
+            position: absolute;
+        }
+        h1{
+            color: white;
+            text-align: center;
+            padding-bottom: 1%;
+            padding-left: 1%;
+        }
+    }
+
+    .trainer-info{
+    height: 437px;
+    width: 471px;
+    background: white;
+    display: inline-block;
+    position: relative;
+    top: -13px;
+    left: 445px;
+    border-radius: 15px;
+    div{
+        display: inline-block;
+        width: 230px;
+        h3{
+            font-size: 21px;
+            padding: 18px 0 18px 0;
+        }
+        p{
+            padding: 21px 0 18px 0;
+            margin: 0;
+            font-size: 20px;
+        }
+    }
+    }
+    
+}
+    
+#pokemons{
+    text-align: center;
+    color: white;
+    padding-top: 66px;
 }
 
 .container-1{
