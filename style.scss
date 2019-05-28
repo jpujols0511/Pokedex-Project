@@ -62,6 +62,15 @@
     display: inline-block;
 }
 
+%bg-attribute{
+    min-height: 800px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .poke-stats-1{
     @extend %poke-stats;
 }
@@ -76,33 +85,36 @@
 }
 
 .main-nav{
-    height: 81px;
-    background: red;
+    background: #ffffff00;
+    position: fixed;
+    z-index: 3;
     ul{
         @extend %display-attribute;
         li{
             @extend %display-attribute;
-            font-size: 30px;
+            font-size: 28px;
+            padding: 10px;
+            background: rgb(204, 76, 48);
+            border-radius: 15px;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+                    a:hover{
+                        color: #d6cfcf;
+                    }
+        }
+        li:nth-child(2){
+            background: #c3da45;
+        }
+        li:nth-child(3){
+            background: #9e44be;
+        }
+        li:nth-child(4){
+            background: #4460be;
         }
     }
 }
-    .main-header{
-        h1{
-
-            text-align: center;
-            padding-top: 10px;
-            color: #000;
-        }
-    height: 110px;
-    width: 352px;
-    position: absolute;
-    right: 551px;
-    top: 0px;
-    }
-
-    .left-nav{
-        float: right;
-    }
 
 
 .grid{
@@ -132,7 +144,9 @@
 
 .container-0{
     @extend %container-size;
-    background: #000;
+    background-image: url('pokemon_1450x700.jpg');
+    @extend %bg-attribute;
+
     section{
         text-align: left;
         padding-top: 80px;
@@ -142,7 +156,7 @@
             position: absolute;
         }
         h1{
-            color: white;
+            color: #fff;
             text-align: center;
             padding-bottom: 1%;
             padding-left: 1%;
@@ -173,27 +187,25 @@
 #pokemons{
     text-align: center;
     color: white;
-    padding-top: 66px;
 }
 
 .container-1{
     @extend %container-size;
     background-image: url('geodude.png');
-    background-position: 1496px 539px;
+    @extend %bg-attribute;
 }
 
 .container-2{
     @extend %container-size;
     background-image: url('dus.jpg');
-    background-position: 96px 735px;
-    background-size: cover;
+    @extend %bg-attribute;
 }
 
 .container-3{
     @extend %container-size;
-    background-image: url('mewtwo.jpg');
-    background-position: 1506px -94px;
-    background-size: cover;
+    background-image: url('mewt.jpg');
+    @extend %bg-attribute;
+
 }
 
 .header{
@@ -270,4 +282,35 @@
 
 .tname{
     color: #a868c0;
+}
+
+.cont-div{
+    height: 50px;
+    background-color: #E3350D;
+}
+
+#fullpage{
+    height: 100vh;
+    overflow: hidden;
+}
+
+.poke-info{
+    width: 750px;
+    height: 280px;
+    background: #fff;
+    position: relative;
+    left: 55px;
+    top: 100px;
+    border-radius: 15px;
+
+    h1{
+        text-align: center;
+        font-size: 28px;
+    }
+    p{
+        text-align: left;
+        margin: 2%;
+        line-height: 1.8;
+
+    }
 }

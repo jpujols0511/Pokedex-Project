@@ -58,29 +58,40 @@
   display: inline-block;
 }
 
+.container-3, .container-2, .container-1, .container-0 {
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .main-nav {
-  height: 81px;
-  background: red;
+  background: #ffffff00;
+  position: fixed;
+  z-index: 3;
 }
 .main-nav ul li {
-  font-size: 30px;
+  font-size: 28px;
+  padding: 10px;
+  background: #cc4c30;
+  border-radius: 15px;
 }
-
-.main-header {
-  height: 110px;
-  width: 352px;
-  position: absolute;
-  right: 551px;
-  top: 0px;
+.main-nav ul li a {
+  text-decoration: none;
+  color: #fff;
 }
-.main-header h1 {
-  text-align: center;
-  padding-top: 10px;
-  color: #000;
+.main-nav ul li a:hover {
+  color: #d6cfcf;
 }
-
-.left-nav {
-  float: right;
+.main-nav ul li:nth-child(2) {
+  background: #c3da45;
+}
+.main-nav ul li:nth-child(3) {
+  background: #9e44be;
+}
+.main-nav ul li:nth-child(4) {
+  background: #4460be;
 }
 
 .grid {
@@ -94,7 +105,7 @@
 }
 
 .container-0 {
-  background: #000;
+  background-image: url("pokemon_1450x700.jpg");
 }
 .container-0 section {
   text-align: left;
@@ -106,7 +117,7 @@
   position: absolute;
 }
 .container-0 section h1 {
-  color: white;
+  color: #fff;
   text-align: center;
   padding-bottom: 1%;
   padding-left: 1%;
@@ -128,24 +139,18 @@
 #pokemons {
   text-align: center;
   color: white;
-  padding-top: 66px;
 }
 
 .container-1 {
   background-image: url("geodude.png");
-  background-position: 1496px 539px;
 }
 
 .container-2 {
   background-image: url("dus.jpg");
-  background-position: 96px 735px;
-  background-size: cover;
 }
 
 .container-3 {
-  background-image: url("mewtwo.jpg");
-  background-position: 1506px -94px;
-  background-size: cover;
+  background-image: url("mewt.jpg");
 }
 
 .header {
@@ -193,6 +198,35 @@
 
 .tname {
   color: #a868c0;
+}
+
+.cont-div {
+  height: 50px;
+  background-color: #E3350D;
+}
+
+#fullpage {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.poke-info {
+  width: 750px;
+  height: 280px;
+  background: #fff;
+  position: relative;
+  left: 55px;
+  top: 100px;
+  border-radius: 15px;
+}
+.poke-info h1 {
+  text-align: center;
+  font-size: 28px;
+}
+.poke-info p {
+  text-align: left;
+  margin: 2%;
+  line-height: 1.8;
 }
 
 /*# sourceMappingURL=main.css.map */

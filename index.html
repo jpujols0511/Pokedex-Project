@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+        
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -18,34 +18,33 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    
     <title>Pokedex</title>
 </head>
 <body>
+
+
+    
+    <div class='container-fluid container-0 section active' id='beginning'>
         <nav class='main-nav'>
-            <ul>
-                <li>More trainers?</li>
-                <li>Yer</li>
-                <li>Yer</li>
-                <li>Yer</li>
-            </ul>
-            <form class='left-nav' action="">
-                <input type="text" placeholder="Search sum..">
-            </form>
+            <a href="https://fontmeme.com/pokemon-font/"><img
+                src="https://fontmeme.com/permalink/190528/54bf47458fc3320b26e1e0dcdfb0003f.png" alt="pokemon-font"
+                border="0"></a>
+                        <ul>
+                            <li><a href="#beginning">Home</a></li>
+                            <li><a href="">Pokedex</a></li>
+                            <li><a href="">Trainer Builder</a></li>
+                            <li><a href="">Play Pokemon</a></li>
+                        </ul>
+            
         </nav>
-                <div class='main-header'>
-                    <a href="https://fontmeme.com/pokemon-font/"><img
-                            src="https://fontmeme.com/permalink/190528/54bf47458fc3320b26e1e0dcdfb0003f.png" alt="pokemon-font"
-                            border="0"></a>
-                </div>
-                
-                <div class='container-fluid container-0'>
-                    <section >
-                        <div class='trainer'>
-                            <h1>TRAINER INFO</h1>
-                            <img src="Syx3k.png" alt="">
+                        <section >
+                            <div class='trainer'>
+                                <h1>TRAINER INFO</h1>
+                                <img src="Syx3k.png" alt="">
                                 <div class='trainer-info row'>
                                     <div class='col'>
-
+                                        
                                         <h3 class='tname'>Name:</h3>
                                         <h3 class='poke-id'>ID:</h3>
                                         <h3 class='poke-hp'>Pokedex #</h3>
@@ -60,32 +59,35 @@
                                         <p>₱ 23140</p>
                                         <p>357</p>
                                         <p>10/21/2010</p>
-
+                                        
                                         
                                     </div>
                                 </div>
-                        </div>
+                            </div>
+                        </section>
+                    </div>
+                    
+                    <section class='cont-div'>
+                            <h1 id='pokemons'>POKEMON STATS</h1>
+                        
                     </section>
-                    <h1 id='pokemons'>POKEMON STATS</h1>
-                </div>
         
-        
-        <div class='container-fluid container-1'>
+                    <div class='container-fluid container-1 section'>
             <section class='grid'>
                 <h1 class='header' id='pokeNum1'></h1>
                 <img class='firstimg' src="Geo.png" alt="">
                 <img class='pokedex' src="pokedex.png" alt="">
                 <div class='stat-container'>
-
+                    
                     <section class='poke-stats-1 row'>
                         <div class='col'>
-
+                            
                             <h3 class='poke-id'>ID:</h3>
                             <h3 class='poke-hp'>HP:</h3>
                             <h3 class='poke-atk'>Attack:</h3>
                             <h3 class='poke-def'>Defense:</h3>
                             <h3 class='poke-abi'>Ability:</h3>
-
+                            
                         </div>
                         <div class='col'>
                             
@@ -95,15 +97,28 @@
                             <p id='poke1Defense'></p>
                             <p id='poke1Ability'></p>
                         </div>
-                        
                     </section>
                 </div>
-            </section>
-            
-            
+                <div class='poke-info'>
+                        <h1>Poke Bio</h1>
+                        <p>
+                            Geodude is a dual-type Rock/Ground Pokémon introduced in Generation 1. It evolves into Graveler starting at level 25, which evolves into Golem when traded.
+                            In Alola, Geodude has a regional variant that is Rock/Electric. It evolves into Alolan Graveler starting at level 25,
+                            which evolves into Alolan Golem when traded.
+                            Geodude can be most often found on mountain trails and fields. It will sit still in these areas, which is why it is
+                            often mistaken for a rock. It is often stepped on and will sometimes swing its arms in anger when this occurs. When
+                            Geodude sleeps deeply, it buries itself halfway into the ground.
+                        </p>
+
+                </div>
+            </section>  
         </div>
         
-        <div class='container-fluid container-2'>
+        <section class='cont-div'>
+
+        </section>
+        
+        <div class='container-fluid container-2 section'>
             <section class='grid'>
                 <h1 class='header' id='pokeNum2'></h1>
                 <img class='secondimg' src="356.png" alt="">
@@ -126,10 +141,26 @@
                         </div>
                     </section>
                 </div>
+                <div class='poke-info'>
+                    <h1>Poke Bio</h1>
+                    <p>
+                        Dusclops is a Ghost-type Pokémon introduced in Generation III.
+                        It evolves from Duskull starting at level 37 and evolves into Dusknoir when traded holding a Reaper Cloth.
+                        Dusclops has a roundish gray body with two stubby legs. Its body is hollow and can absorb anything much like a black
+                        hole. It has a single red eye and three tooth-like projections. It has two wispy, light gray growths coming out of its
+                        shoulders and one on top of its head. Its light gray hands appear to be directly attached to its body. It will wave
+                        these hands to hypnotize opponents, and then force them to do as it wills. Dusclops usually lives in thick forests.
+                    </p>
+                
+                </div>
             </section>
         </div>
+
+        <section class='cont-div'>
+            
+        </section>
         
-        <div class='container-fluid container-3'>
+        <div class='container-fluid container-3 section'>
             <section class='grid'>
                 <h1 class='header' id='pokeNum3'></h1>
                 <img class='thirdimg' src="Mewtwo.png" alt="">
@@ -152,10 +183,22 @@
                         </div>
                     </section>
                 </div>
+                <div class='poke-info'>
+                    <h1>Poke Bio</h1>
+                    <p>
+                        Mewtwo is a Psychic-type Legendary Pokémon introduced in Generation I.
+                        While it is not known to evolve into or from any other Pokémon, it can Mega Evolve into two different forms: Mega Mewtwo
+                        X using Mewtwonite X and Mega Mewtwo Y using Mewtwonite Y. It is a member of the Mew duo along with Mew.
+                        Mewtwo is a Pokémon created by science. It is a bipedal, humanoid creature with some feline features. It is primarily
+                        gray with a long, purple tail. On top of its head are two short, blunt horns, and it has purple eyes.A tube extends from the back of its skull to the top of its spine, bypassing its neck. It has a defined chest and
+                        shoulders, which resemble a breastplate.
+                    </p>
+                
+                </div>
             </section>
         </div>
         
         
     </body>
-
+    
     </html>
