@@ -49,7 +49,7 @@ function loadDoc(i) {
                 pokeData.stats[5].base_stat,
                 pokeData.stats[4].base_stat,
                 pokeData.stats[3].base_stat,
-                pokeData.abilities[1].ability.name
+                pokeData.abilities[0].ability.name + ", "  + pokeData.abilities[1].ability.name
                 
                 )
                 THREE_POKE.push(pokemonObjects)
