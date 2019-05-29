@@ -109,7 +109,7 @@
 
 .container-0{
     @extend %container-size;
-    background-image: url('pokemonbg.jpg');
+    background-image: url('images/pokemonbg.jpg');
     @extend %bg-attribute;
 
     section{
@@ -158,19 +158,19 @@
 
 .container-1{
     @extend %container-size;
-    background-image: url('geodude.png');
+    background-image: url('images/geodude.png');
     @extend %bg-attribute;
 }
 
 .container-2{
     @extend %container-size;
-    background-image: url('dus.jpg');
+    background-image: url('images/dus.jpg');
     @extend %bg-attribute;
 }
 
 .container-3{
     @extend %container-size;
-    background-image: url('mewt.jpg');
+    background-image: url('images/mewt.jpg');
     @extend %bg-attribute;
 }
 

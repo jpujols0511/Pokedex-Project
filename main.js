@@ -32,7 +32,7 @@ class Trainer{
         
     }
                 
-                }
+}
     new_trainer = new Trainer("Syx3k");
 
 

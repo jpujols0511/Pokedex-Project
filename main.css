@@ -95,7 +95,7 @@
 }
 
 .container-0 {
-  background-image: url("pokemonbg.jpg");
+  background-image: url("images/pokemonbg.jpg");
 }
 .container-0 section {
   text-align: left;
@@ -132,15 +132,15 @@
 }
 
 .container-1 {
-  background-image: url("geodude.png");
+  background-image: url("images/geodude.png");
 }
 
 .container-2 {
-  background-image: url("dus.jpg");
+  background-image: url("images/dus.jpg");
 }
 
 .container-3 {
-  background-image: url("mewt.jpg");
+  background-image: url("images/mewt.jpg");
 }
 
 .grid {
