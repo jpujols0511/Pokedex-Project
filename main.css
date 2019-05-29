@@ -94,16 +94,6 @@
   background: #4460be;
 }
 
-.grid {
-  width: 739px;
-  height: 392px;
-  background: #fff0;
-  display: block;
-  position: relative;
-  top: 46px;
-  border-radius: 30px;
-}
-
 .container-0 {
   background-image: url("pokemonbg.jpg");
 }
@@ -136,9 +126,9 @@
   font-weight: 600;
 }
 
-#pokemons {
-  text-align: center;
-  color: white;
+.cont-div {
+  height: 50px;
+  background-color: #E3350D;
 }
 
 .container-1 {
@@ -151,6 +141,47 @@
 
 .container-3 {
   background-image: url("mewt.jpg");
+}
+
+.grid {
+  width: 739px;
+  height: 392px;
+  background: #fff0;
+  display: block;
+  position: relative;
+  top: 46px;
+  border-radius: 30px;
+}
+
+.poke-info {
+  width: 750px;
+  height: 280px;
+  background: #fff;
+  position: relative;
+  left: 55px;
+  top: 100px;
+  border-radius: 15px;
+}
+.poke-info h1 {
+  text-align: center;
+  font-size: 28px;
+}
+.poke-info p {
+  text-align: left;
+  margin: 2%;
+  line-height: 1.8;
+}
+
+.pokeball {
+  width: 6%;
+  position: absolute;
+  top: 236px;
+  right: 97px;
+}
+
+#pokemons {
+  text-align: center;
+  color: white;
 }
 
 .header {
@@ -198,37 +229,6 @@
 
 .tname {
   color: #a868c0;
-}
-
-.cont-div {
-  height: 50px;
-  background-color: #E3350D;
-}
-
-.poke-info {
-  width: 750px;
-  height: 280px;
-  background: #fff;
-  position: relative;
-  left: 55px;
-  top: 100px;
-  border-radius: 15px;
-}
-.poke-info h1 {
-  text-align: center;
-  font-size: 28px;
-}
-.poke-info p {
-  text-align: left;
-  margin: 2%;
-  line-height: 1.8;
-}
-
-.pokeball {
-  width: 6%;
-  position: absolute;
-  top: 236px;
-  right: 97px;
 }
 
 /*# sourceMappingURL=main.css.map */

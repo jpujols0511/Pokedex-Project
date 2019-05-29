@@ -1,3 +1,5 @@
+// FUNCTIONS TO BE APPLIED TO ATTRIBUTES
+
 %pokemon-name{
     font-family: sans-serif;
     font-size: 30px;
@@ -71,18 +73,7 @@
     background-size: cover;
 }
 
-.poke-stats-1{
-    @extend %poke-stats;
-}
-
-.poke-stats-2{
-    @extend %poke-stats;
-}
-
-
-.poke-stats-3{
-    @extend %poke-stats;
-}
+// END OF THE FUNCTIONS FOR THE STYLESHEET
 
 .main-nav{
     background: #ffffff00;
@@ -114,32 +105,6 @@
             background: #4460be;
         }
     }
-}
-
-
-.grid{
-    width: 739px;
-    height: 392px;
-    background: #fff0;
-    display: block;
-    position: relative;
-    top: 46px;
-    border-radius: 30px;
-}
-
-
-#pokeNum1{
-    @extend %pokemon-name;
-    
-}
-
-#pokeNum2{
-    @extend %pokemon-name;
-    
-}
-
-#pokeNum3{
-    @extend %pokemon-name;
 }
 
 .container-0{
@@ -183,10 +148,12 @@
 }
     
 }
-    
-#pokemons{
-    text-align: center;
-    color: white;
+
+// END OF FIRST CONTAINER
+
+.cont-div{
+    height: 50px;
+    background-color: #E3350D;
 }
 
 .container-1{
@@ -205,7 +172,76 @@
     @extend %container-size;
     background-image: url('mewt.jpg');
     @extend %bg-attribute;
+}
 
+.grid{
+    width: 739px;
+    height: 392px;
+    background: #fff0;
+    display: block;
+    position: relative;
+    top: 46px;
+    border-radius: 30px;
+}
+
+.poke-info{
+    width: 750px;
+    height: 280px;
+    background: #fff;
+    position: relative;
+    left: 55px;
+    top: 100px;
+    border-radius: 15px;
+
+    h1{
+        text-align: center;
+        font-size: 28px;
+    }
+    p{
+        text-align: left;
+        margin: 2%;
+        line-height: 1.8;
+
+    }
+}
+
+.pokeball{
+    width: 6%;
+    position: absolute;
+    top: 236px;
+    right: 97px;
+}
+
+.poke-stats-1{
+    @extend %poke-stats;
+}
+
+.poke-stats-2{
+    @extend %poke-stats;
+}
+
+
+.poke-stats-3{
+    @extend %poke-stats;
+}
+
+#pokeNum1{
+    @extend %pokemon-name;
+    
+}
+
+#pokeNum2{
+    @extend %pokemon-name;
+    
+}
+
+#pokeNum3{
+    @extend %pokemon-name;
+}
+  
+#pokemons{
+    text-align: center;
+    color: white;
 }
 
 .header{
@@ -246,14 +282,12 @@
     @extend %img-attributes;
 }
 
-
 .stat-container{
     @extend %stat-size;
 }
 
 .stat-container-2{
-    @extend %stat-size;
-        
+    @extend %stat-size;      
 }
 
 .stat-container-3{
@@ -284,35 +318,5 @@
     color: #a868c0;
 }
 
-.cont-div{
-    height: 50px;
-    background-color: #E3350D;
-}
 
-.poke-info{
-    width: 750px;
-    height: 280px;
-    background: #fff;
-    position: relative;
-    left: 55px;
-    top: 100px;
-    border-radius: 15px;
 
-    h1{
-        text-align: center;
-        font-size: 28px;
-    }
-    p{
-        text-align: left;
-        margin: 2%;
-        line-height: 1.8;
-
-    }
-}
-
-.pokeball{
-    width: 6%;
-    position: absolute;
-    top: 236px;
-    right: 97px;
-}
