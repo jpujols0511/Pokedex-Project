@@ -60,6 +60,7 @@ function loadDoc(i) {
           xhttp.send();
     };
 
+setTimeout(
 function displayInfo() {
     pokeGrid = document.getElementById('pokeGrid')
     secondPokemon = document.getElementById('pokeNum2')
@@ -111,6 +112,6 @@ function displayInfo() {
 
 }
 
+, 300)
 
-setTimeout(displayInfo, 300)
-
+ 
